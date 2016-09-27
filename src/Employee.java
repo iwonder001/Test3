@@ -1,18 +1,20 @@
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
+//import java.util.Date;
 
 public class Employee {
 	
 	public String name;
 	public String ssn; //use as a String because Im not doing math with it
 	public BigDecimal salary;
-	public Date hiredate;
+	public LocalDate hire;
 	
-	public Employee (String n, String s, BigDecimal sal, Date h) {
+	
+	public Employee (String n, String s, BigDecimal sal, LocalDate h) {
 		name = n;
 		ssn = s;
 		salary = sal;
-		hiredate = h;
+		hire =h;
 		
 	}//closes constructor
 	//Making methods (getters/setters) to interact with the objects
@@ -36,10 +38,10 @@ public class Employee {
 		public void setSalary(BigDecimal sal){
 			salary =sal;
 		}
-		public Date getHiredate(){
-			return hiredate;
+		public LocalDate getHire(){
+			return hire;
 		}
-		public void setHiredate(Date h){
-			hiredate = h;
+		public void setHire(LocalDate h){
+			hire = h;
 		}
 }//closes Employee class
