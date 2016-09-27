@@ -24,6 +24,11 @@ public class Employee {
 		public void setName(String n){
 			name =n; //name the instance variable is equal to n
 		}
-		
+		public String getSsn(){
+			return ssn;
+		}
+		public void setSsn(String s){
+			ssn =s;
+		}
 
 }//closes Employee class
