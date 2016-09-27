@@ -13,9 +13,15 @@ public class MainApp {
 		System.out.println(p1.getSsn());
 		System.out.println(p1.getSalary());
 		p1.setName("Elle");//changed name
+		
 		System.out.println(p1.getName());
 		p1.setSsn("222-22-2222");//changed ssn
 		System.out.println(p1.getSsn());
+		
+	    payment = new BigDecimal("100000"); 
+		p1.setSalary(payment);//changed salary
+		System.out.println(p1.getSalary());
+		
 	}
 
 }

@@ -36,5 +36,10 @@ public class Employee {
 		public void setSalary(BigDecimal sal){
 			salary =sal;
 		}
-
+		public Date getHiredate(){
+			return hiredate;
+		}
+		public void setHiredate(Date h){
+			hiredate = h;
+		}
 }//closes Employee class
