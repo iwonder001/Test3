@@ -30,5 +30,11 @@ public class Employee {
 		public void setSsn(String s){
 			ssn =s;
 		}
+		public BigDecimal getSalary(){
+			return salary;
+		}
+		public void setSalary(BigDecimal sal){
+			salary =sal;
+		}
 
 }//closes Employee class
